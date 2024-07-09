@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Book</title>
+    <link rel="stylesheet" href="/recipe.css">
+    <link rel="icon" href="/recipe.png">
+</head>
+<body>
+    <header>
+        <h1>Recipe Book</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#recipes">Recipes</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>Welcome to the Recipe Book</h2>
+            <p>Find the best recipes here.</p>
+        </section>
+
+        <section id="recipes">
+            <h2>Recipes</h2>
+            <div class="recipe-card">
+                <h3>Spaghetti Carbonara</h3>
+                <p>Spaghetti Carbonara is a classic Italian pasta dish that is simple yet rich and indulgent. It originates from Rome and is known for its creamy texture, which is achieved without the use of cream</p>
+                <img src="/bowl-spaghetti-with-green-leaf-top.jpg" alt="Spaghetti Carbonara">
+                <button onclick="showRecipe('spaghetti')">View Recipe</button>
+            </div>
+            <div class="recipe-card">
+                <h3>Chocolate Cake</h3>
+                <p>Chocolate cake is a beloved dessert enjoyed by people around the world. It’s known for its rich, indulgent flavor and moist texture. Here’s a detailed look at this classic treat</p>
+                <img src="/Chocolate Cake.jpg" alt="Chocolate Cake">
+                <button onclick="showRecipe('chocolate-cake')">View Recipe</button>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us :-</h2>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Recipe Book</p>
+        <P>&hearts; Develop by vishanu</P>
+        <P>Thanku</P>
+    </footer>
+
+    <script src="/recipe.js"></script>
+</body>
+</html>
